@@ -48,4 +48,4 @@ const feedbackForm = new End({
 
 
 // Обновление для подтягивания стилей из JavaScript
-window.addEventListener('resize', () => { location.reload() });
+// window.addEventListener('resize', () => { location.reload() });
