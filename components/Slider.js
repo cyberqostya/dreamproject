@@ -68,10 +68,12 @@ class Slider {
   deactivateSlider() {
     this.sliderRoad.style.transition = 'none';
     document.documentElement.style.userSelect = 'none';
+    document.documentElement.style.overflow = 'hidden';
   }
   activateSlider() {
     this.sliderRoad.style.transition = 'left .5s';
     document.documentElement.style.userSelect = 'all';
+    document.documentElement.style.overflow = 'auto';
   }
   swipeStart = (e) => {
     this.CURSOR_COORD_ON_CLICK = e.touches[0].clientX - this.CORRECTION_FOR_OFFSET_FROM_LEFT_BORDER_OF_WINDOW;
