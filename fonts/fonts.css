@@ -1,6 +1,9 @@
 @font-face {
   font-family: 'Neumann';
-  src: local('Neumann'), url('./Neumann/Neumann.woff2') format('woff2'), url('./Neumann/Neumann.woff') format('woff'), url('./Neumann/Neumann.ttf') format('truetype'), url('./Neumann/Neumann.eot') format('eot');
+  src: url('./Neumann/Neumann.woff2') format('woff2'), 
+    url('./Neumann/Neumann.woff') format('woff'), 
+    url('./Neumann/Neumann.ttf') format('truetype'), 
+    url('./Neumann/Neumann.eot') format('eot');
   font-weight: 400;
   font-style: normal;
 }

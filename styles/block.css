@@ -48,7 +48,7 @@
   justify-content: center;
   align-items: center;
   pointer-events: none;
-  border: 2px solid transparent;
+  border: 2px solid;
   border-image: linear-gradient(
     to bottom,
     #9C814A 0%, 
