@@ -58,7 +58,6 @@
   display: flex;
   justify-content: flex-end;
   column-gap: 50px;
-  max-width: 790px;
   margin: 65px 0 0 auto;
 }
 
@@ -67,9 +66,9 @@
   border: 1px solid #E8CDA1;
 }
 
-.details__works-work {
-  margin: 0;
-}
+.details__works-work { margin: 0 }
+.details__works-work:nth-of-type(1) { max-width: 291px }
+.details__works-work:nth-of-type(2) { max-width: 349px }
 
 .details__works-image {
   margin: 55px 0 0;
@@ -98,10 +97,10 @@
     display: flex;
     flex-direction: column;
   }
+  .details__works-work:nth-of-type(1), .details__works-work:nth-of-type(2) { max-width: none; }
   .details__works-container {
-    justify-content: center;
+    justify-content: space-between;
     column-gap: 30px;
-    max-width: none;
     margin: 25px 0 0 auto;
     order: 3;
   }

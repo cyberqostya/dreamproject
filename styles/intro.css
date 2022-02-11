@@ -1,53 +1,22 @@
 .intro {
-  min-height: 100vh;
   background: center / cover no-repeat url(../images/intro-back.jpg);
 
   color: #fff;
 
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-
-  padding-bottom: 65px;
-}
-
-
-.intro__header {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-
-  padding: 25px 0;
 }
-.intro__header-phone-link {
+.intro__inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  column-gap: 10px;
-}
-.intro__header-phone-link-text {
-  font-size: 20px;
-  line-height: 26px;
-  font-weight: 600;
-}
-.intro__header-form-link {
-  background: center/cover no-repeat url(../images/button-border_small.svg);
-  width: 132px;
-  height: 38px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  font-size: 13px;
-  line-height: 14px;
-
-  transition: box-shadow .3s;
+  position: relative;
+  min-height: 100vh;
+  padding-top: 120px;
+  box-sizing: border-box;
 }
 
 
 .intro__main {
-  margin-top: 185px;
   max-width: 660px;
 }
 .intro__main-title {
@@ -60,7 +29,6 @@
 }
 
 .intro__advantages {
-  margin: auto 0 0 auto;
   padding: 0;
 
   display: flex;
@@ -69,6 +37,9 @@
   column-gap: 60px;
 
   list-style-type: none;
+  position: absolute;
+  bottom: 65px;
+  right: 0;
 }
 .intro__advantages li {
   display: flex;
@@ -99,19 +70,16 @@
 }
 
 
-/* Анимации */
-.intro__header-form-link:hover {
-  box-shadow: 0px 0px 9px rgba(201, 177, 111, 0.6), inset 0px 0px 10px rgba(201, 177, 111, 0.7);
-}
-
 
 /* Media Query */
 @media screen and (max-width: 1024px) {
+  .intro__inner { padding-bottom: 65px; }
   .intro__advantages[data-mode="mobile"] {
     display: flex;
     flex-direction: column;
     margin-top: 33px; 
     row-gap: 15px;
+    position: static;
   }
   .intro__advantages[data-mode="mobile"] li {
     flex-basis: auto;
@@ -125,22 +93,4 @@
     font-size: 36px;
     line-height: 50px;
   }
-}
-@media screen and (max-width: 768px) {
-  .intro__header-phone-link-icon, 
-  .intro__header-phone-link-text {
-    display: none;
-  }
-  .intro__header-phone-link {
-    margin-left: auto;
-  }
-  .intro__header-phone-button {
-    margin-right: 12px;
-  }
-  .intro__main {
-    margin-top: 120px;
-  }
-}
-@media screen and (max-width: 375px) {
-  .intro__header-form-link { display: none; }
 }

@@ -1,6 +1,7 @@
 .projects {
   padding: 180px 0 0;
 }
+.projects__inner { max-width: 1440px }
 
 .projects__title {
   margin: 0 0 40px;
@@ -37,15 +38,15 @@
   max-width: var(--left-width);
 }
 .project__subtitle {
-  margin: 25px 0 0;
+  margin: 27px 0 0;
   max-width: var(--left-width);
 }
 .project__list {
-  margin: 15px 0 0;
-  list-style-type: "– ";
+  margin: 17px 0 0;
+  list-style-type: "–  ";
   color: #aaa6c5;
   max-width: var(--left-width);
-  padding: 0 0 0 15px;
+  padding: 0 0 0 21px;
   line-height: 1.7;
 }
 .project__data {
@@ -81,6 +82,7 @@
 .project_gazprom { --left-width: 560px }
 .project_rosa { --left-width: 540px }
 .project_kolobovichi { --left-width: 330px }
+.project_kolobovichi .project__list { max-width: none; }
 
 
 @media screen and (max-width: 990px) {

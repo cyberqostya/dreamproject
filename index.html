@@ -9,73 +9,81 @@
 </head>
 <body>
 
-  <section class="intro block">
-    <header class="intro__header">
-      <a href="/" class="intro__header-logo-link">
-        <img src="./images/logo.svg" alt="logotype" class="intro__header-logo">
+  <header class="header block">
+    <div class="header__inner block__inner">
+      <a href="/" class="header__logo-link">
+        <img src="./images/logo.svg" alt="logotype" class="header__logo">
       </a>
-      <a href="tel:+78125651880" class="intro__header-phone-link">
-        <img class="intro__header-phone-link-icon" src="./images/phone-icon.svg" alt="phone-icon">
-        <span class="intro__header-phone-link-text">+7 (812) 565-18-80</span>
-        <img data-mode="mobile" class="intro__header-phone-button" src="./images/phone-button.png" alt="phone-icon">
+      <a href="tel:+78125651880" class="header__phone-link">
+        <img class="header__phone-link-icon" src="./images/phone-icon.svg" alt="phone-icon">
+        <span class="header__phone-link-text">+7 (812) 565-18-80</span>
+        <img data-mode="mobile" class="header__phone-button" src="./images/phone-button.svg" alt="phone-icon">
       </a>
-      <a class="intro__header-form-link" data-mode="mobile" href="#feedbackForm">Оставить заявку</a>
-    </header>
+      <a class="header__form-link" data-mode="mobile" href="#feedbackForm">Оставить заявку</a>
+    </div>
+  </header>
 
-    <div class="intro__main">
-      <h1 class="intro__main-title block__title">Проекты премиум-класса под ключ</h1>
-      <ul data-mode="mobile" class="intro__advantages">
+  <section class="intro block">
+    <div class="intro__inner block__inner">
+      <div class="intro__main">
+        <h1 class="intro__main-title block__title">Проекты премиум-класса под ключ</h1>
+        <ul data-mode="mobile" class="intro__advantages">
+          <li>Возможности технологии деревянного домостроения</li>
+          <li>От разработки концепции проекта до подбора интерьерных решений</li>
+          <li>Решение задач любой сложности</li>
+        </ul>
+        <a href="#feedbackForm" class="intro__main-link block__form-link">Оставить заявку</a>
+      </div>
+
+      <ul class="intro__advantages">
         <li>Возможности технологии деревянного домостроения</li>
         <li>От разработки концепции проекта до подбора интерьерных решений</li>
         <li>Решение задач любой сложности</li>
       </ul>
-      <a href="#feedbackForm" class="intro__main-link block__form-link">Оставить заявку</a>
     </div>
-
-    <ul class="intro__advantages">
-      <li>Возможности технологии деревянного домостроения</li>
-      <li>От разработки концепции проекта до подбора интерьерных решений</li>
-      <li>Решение задач любой сложности</li>
-    </ul>
   </section>
 
   <section class="about block">
-    <h2 class="about__title block__title">О нас</h2>
-    <hr class="abount__line">
-    <div class="about__text-container">
-      <p class="about__text">Компания RamFJORD, начиная с 2014 года, реализует проекты по строительству объектов премиум-класса. На сегодняшний день введено в&nbsp;эксплуатацию более 100 объектов:</p>
-      <ul class="about__list">
-        <li class="about__text">Объекты размещения и&nbsp;инфраструктуры на&nbsp;горнолыжных курортах</li>
+    <div class="about__inner block__inner">
+      <h2 class="about__title block__title">О нас</h2>
+      <hr class="abount__line">
+      <div class="about__text-container">
+        <p class="about__text">Компания RamFJORD, начиная с 2014 года, реализует проекты по строительству объектов премиум-класса. На сегодняшний день введено в&nbsp;эксплуатацию более 100 объектов:</p>
+        <ul class="about__list">
+          <li class="about__text">Объекты размещения и&nbsp;инфраструктуры на&nbsp;горнолыжных курортах</li>
+          <li class="about__text">Гостиничные комплексы</li>
+          <li class="about__text">Загородные жилые объекты</li>
+        </ul>
+      </div>
+      <img src="./images/about-image.jpg" alt="about-us" class="about__image">
+      <ul class="about__list" data-mode="mobile">
+        <li class="about__text">Объекты размещения и инфраструктуры на горнолыжных курортах</li>
+        <hr>
         <li class="about__text">Гостиничные комплексы</li>
+        <hr>
         <li class="about__text">Загородные жилые объекты</li>
       </ul>
+      <p class="about__signification">Обширная география деятельности нашей компании, позволяет реализовать самые сложные задачи как на территории РФ, так и в странах ЕАЭС, а также Европы.</p>
     </div>
-    <img src="./images/about-image.jpg" alt="about-us" class="about__image">
-    <ul class="about__list" data-mode="mobile">
-      <li class="about__text">Объекты размещения и инфраструктуры на горнолыжных курортах</li>
-      <hr>
-      <li class="about__text">Гостиничные комплексы</li>
-      <hr>
-      <li class="about__text">Загородные жилые объекты</li>
-    </ul>
-    <p class="about__signification">Обширная география деятельности нашей компании, позволяет реализовать самые сложные задачи как на территории РФ, так и в странах ЕАЭС, а также Европы.</p>
   </section>
 
   <section class="approach block">
-    <h2 class="approach__title block__title">Наш подход</h2>
-    <p class="approach__subtitle">Строительство премиальных объектов рекреационного назначения, требует индивидуального и профессионального подхода. Специалисты компании RamFJORD, готовы оказать клиенту, полный перечень услуг:</p>
-    <div class="approach__advantages">
-      <div class="approach__advantage">
-        <img src="./images/approach-advantage-1.png" alt="advantage" class="approach__advantage-icon">
-        <p class="approach__advantage-title">Предоставят сервис высочайшего уровня</p>
-      </div>
-      <div class="approach__advantage">
-        <img src="./images/approach-advantage-2.png" alt="advantage" class="approach__advantage-icon">
-        <p class="approach__advantage-title">Решат задачи любой сложности</p>
-      </div>
-      <div class="approach__advantage">
-        <img src="./images/approach-advantage-3.png" alt="advantage" class="approach__advantage-icon">
-        <p class="approach__advantage-title">Предложат клиентам выгодные условия</p>
+    <div class="approach__inner block__inner">
+      <h2 class="approach__title block__title">Наш подход</h2>
+      <p class="approach__subtitle">Строительство премиальных объектов рекреационного назначения, требует индивидуального и профессионального подхода. Специалисты компании RamFJORD, готовы оказать клиенту, полный перечень услуг:</p>
+      <div class="approach__advantages">
+        <div class="approach__advantage">
+          <img src="./images/approach-advantage-1.png" alt="advantage" class="approach__advantage-icon">
+          <p class="approach__advantage-title">Предоставят сервис высочайшего уровня</p>
+        </div>
+        <div class="approach__advantage">
+          <img src="./images/approach-advantage-2.png" alt="advantage" class="approach__advantage-icon">
+          <p class="approach__advantage-title">Решат задачи любой сложности</p>
+        </div>
+        <div class="approach__advantage">
+          <img src="./images/approach-advantage-3.png" alt="advantage" class="approach__advantage-icon">
+          <p class="approach__advantage-title">Предложат клиентам выгодные условия</p>
+        </div>
       </div>
     </div>
   </section>
@@ -156,22 +164,24 @@
   </section>
 
   <section class="details block">
-    <h2 class="details__title block__title">Продумано до мелочей</h2>
-    <p class="details__subtitle">Реализация наших проектов основана на принципе «под ключ». Работа всегда начинается с обсуждения идеи и последующем построении концепции объекта.</p>
-    <div class="details__3d">
-      <img src="./images/details-3d.svg" alt="3d" class="details__3d-image">
-      <p class="details__3d-title">Наша команда, состоит из специалистов широкого спектра:</p>
-      <p class="details__3d-text">от инженерно-технического персонала и бригад строителей, до прогессивных архитекторов и дизайнеров. Слаженная работа команды, позволяет уделять внимание не только глобальным вопросам, но и мельчайшим деталям.</p>
-    </div>
-    <div class="details__works">
-      <p class="details__works-title">Мы не только выполняем строительно-монтажные работы на объекте, а также:</p>
-      <div class="details__works-container">
-        <p class="details__works-work">Реализуем интерьерные решения, осуществляя подбор мебели, оборудования, элементов декора</p>
-        <hr class="details__works-line">
-        <p class="details__works-work">Обустраиваем прилегающую территорию: ландшафтный дизайн, СПА и аква-зоны, спортивные объекты.</p>
+    <div class="details__inner block__inner">
+      <h2 class="details__title block__title">Продумано до мелочей</h2>
+      <p class="details__subtitle">Реализация наших проектов основана на принципе «под ключ». Работа всегда начинается с обсуждения идеи и последующем построении концепции объекта.</p>
+      <div class="details__3d">
+        <img src="./images/details-3d.svg" alt="3d" class="details__3d-image">
+        <p class="details__3d-title">Наша команда, состоит из специалистов широкого спектра:</p>
+        <p class="details__3d-text">от инженерно-технического персонала и бригад строителей, до прогессивных архитекторов и дизайнеров. Слаженная работа команды, позволяет уделять внимание не только глобальным вопросам, но и мельчайшим деталям.</p>
       </div>
-      <div class="details__works-image-container"><img src="./images/details-works.jpg" alt="works" class="details__works-image"></div>
-      <div class="details__lets-slide block__lets-slide">Проведите</div>
+      <div class="details__works">
+        <p class="details__works-title">Мы не только выполняем строительно-монтажные работы на объекте, а также:</p>
+        <div class="details__works-container">
+          <p class="details__works-work">Реализуем интерьерные решения, осуществляя подбор мебели, оборудования, элементов декора</p>
+          <hr class="details__works-line">
+          <p class="details__works-work">Обустраиваем прилегающую территорию: ландшафтный дизайн, СПА и аква-зоны, спортивные объекты.</p>
+        </div>
+        <div class="details__works-image-container"><img src="./images/details-works.jpg" alt="works" class="details__works-image"></div>
+        <div class="details__lets-slide block__lets-slide">Проведите</div>
+      </div>
     </div>
   </section>
 
@@ -221,146 +231,150 @@
   </section>
 
   <section class="digits block">
-    <h2 class="digits__title block__title">О нас в цифрах</h2>
-    <div class="digits__container">
-      <div class="digits__digit">
-        <p class="digits__digit-title">
-          <span>90 000+</span>
-          <span class="digits__digit-measure">м<sup>2</sup></span>
-        </p>
-        <p class="digits__digit-text">общая площадь построенных объектов</p>
-      </div>
-      <div class="digits__digit">
-        <p class="digits__digit-title">
-          <span>100+</span>
-        </p>
-        <p class="digits__digit-text">объектов возведено в 4 странах</p>
-      </div>
-      <div class="digits__digit">
-        <p class="digits__digit-title">
-          <span>300 000+</span>
-          <span class="digits__digit-measure">м<sup>2</sup></span>
-        </p>
-        <p class="digits__digit-text">площадь спроектированных объектов</p>
-      </div>
-      <div class="digits__digit">
-        <p class="digits__digit-title">
-          <span>1500</span>
-          <span class="digits__digit-measure">м<sup>2</sup></span>
-        </p>
-        <p class="digits__digit-text">площадь собственного производственного комплекса</p>
+    <div class="digits__inner block__inner">
+      <h2 class="digits__title block__title">О нас в цифрах</h2>
+      <div class="digits__container">
+        <div class="digits__digit">
+          <p class="digits__digit-title">
+            <span>90 000+</span>
+            <span class="digits__digit-measure">м<sup>2</sup></span>
+          </p>
+          <p class="digits__digit-text">общая площадь построенных объектов</p>
+        </div>
+        <div class="digits__digit">
+          <p class="digits__digit-title">
+            <span>100+</span>
+          </p>
+          <p class="digits__digit-text">объектов возведено в 4 странах</p>
+        </div>
+        <div class="digits__digit">
+          <p class="digits__digit-title">
+            <span>300 000+</span>
+            <span class="digits__digit-measure">м<sup>2</sup></span>
+          </p>
+          <p class="digits__digit-text">площадь спроектированных объектов</p>
+        </div>
+        <div class="digits__digit">
+          <p class="digits__digit-title">
+            <span>1500</span>
+            <span class="digits__digit-measure">м<sup>2</sup></span>
+          </p>
+          <p class="digits__digit-text">площадь собственного производственного комплекса</p>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="projects block">
-    <h2 class="projects__title block__title">Реализован<wbr>ные проекты</h2>
+    <div class="projects__inner block__inner">
+      <h2 class="projects__title block__title">Реализован<wbr>ные проекты</h2>
 
-    <div class="project">
-      <div class="project__container">
-        <h3 class="project__title">Горно<wbr>лыжный курорт Amirsoy</h3>
-        <p class="project__subtitle">Объекты размещения и инфраструктуры горного курорта, реализованные по технологиям: фахверковое и брусовое домостроение</p>
-        <ul class="project__list">
-          <li class="project__list-item">Объекты службы размещения</li>
-          <li class="project__list-item">Коттеджи для размещения</li>
-          <li class="project__list-item">Здание ресторана</li>
-          <li class="project__list-item">SPA зона и банный комплекс</li>
-          <li class="project__list-item">Объекты VIP размещения</li>
-        </ul>
-        <div class="project__data">
-          <p class="project__square-title">
-            <span>7000+</span>
-            <span class="project__square-measure">м<sup>2</sup></span>
-          </p>
-          <p class="project__square-text">Общая площадь объектов</p>
-          <img src="./images/project-location-icon.svg" alt="location" class="project__location-icon">
-          <p class="project__location-text">Узбекистан, Ташкентская область, Бостонлыкский район, территория Чимган</p>
+      <div class="project">
+        <div class="project__container">
+          <h3 class="project__title">Горно<wbr>лыжный курорт Amirsoy</h3>
+          <p class="project__subtitle">Объекты размещения и инфраструктуры горного курорта, реализованные по технологиям: фахверковое и брусовое домостроение</p>
+          <ul class="project__list">
+            <li class="project__list-item">Объекты службы размещения</li>
+            <li class="project__list-item">Коттеджи для размещения</li>
+            <li class="project__list-item">Здание ресторана</li>
+            <li class="project__list-item">SPA зона и банный комплекс</li>
+            <li class="project__list-item">Объекты VIP размещения</li>
+          </ul>
+          <div class="project__data">
+            <p class="project__square-title">
+              <span>7000+</span>
+              <span class="project__square-measure">м<sup>2</sup></span>
+            </p>
+            <p class="project__square-text">Общая площадь объектов</p>
+            <img src="./images/project-location-icon.svg" alt="location" class="project__location-icon">
+            <p class="project__location-text">Узбекистан, Ташкентская область, Бостонлыкский район, территория Чимган</p>
+          </div>
         </div>
+        <div class="project__image"><img src="./images/project-1.jpg" alt="project"></div>
+        <div class="project__lets-slide block__lets-slide">Проведите</div>
       </div>
-      <div class="project__image"><img src="./images/project-1.jpg" alt="project"></div>
-      <div class="project__lets-slide block__lets-slide">Проведите</div>
-    </div>
 
-    <div class="project project_gazprom">
-      <div class="project__container">
-        <h3 class="project__title">Горно-туристический центр ПАО Газпром</h3>
-        <ul class="project__list">
-          <li class="project__list-item">Объекты инфраструктуры</li>
-          <li class="project__list-item">Здание «Отеля и СПА 1389»</li>
-          <li class="project__list-item">Комплекс «Апартаментов 1389»</li>
-          <li class="project__list-item">Станции канатных дорог «Альпика-Сервис» отм. 550</li>
-          <li class="project__list-item">Станции канатных дорог «Горный приют 2» отм. 2256</li>
-        </ul>
-      </div>
-      <div class="project__image"><img src="./images/project-2.jpg" alt="project"></div>
-      <div class="project__lets-slide block__lets-slide">Проведите</div>
-    </div>
-
-    <div class="project project_rosa">
-      <div class="project__container">
-        <h3 class="project__title">Канатная дорога 3S&nbsp;Роза-Хутор</h3>
-        <p class="project__subtitle">Выполнение работ по монтажу металлоконструкций и&nbsp;кровельных систем, в рамках технологии исполнения фальцеовй кровли, цинк-титан и композитная черепица</p>
-        <ul class="project__list">
-          <li class="project__list-item">Станции канатных дорог на отм. 1500</li>
-          <li class="project__list-item">Станции канатных дорог ан отм. 1850</li>
-        </ul>
-        <div class="project__data">
-          <p class="project__square-title">
-            <span>250 000+</span>
-            <span class="project__square-measure">м<sup>2</sup></span>
-          </p>
-          <p class="project__square-text">Общая площадь покрытия</p>
-          <img src="./images/project-location-icon.svg" alt="location" class="project__location-icon">
-          <p class="project__location-text">Россия, Краснодарский край,  пос. Красная Поляна</p>
+      <div class="project project_gazprom">
+        <div class="project__container">
+          <h3 class="project__title">Горно-туристический центр ПАО Газпром</h3>
+          <ul class="project__list">
+            <li class="project__list-item">Объекты инфраструктуры</li>
+            <li class="project__list-item">Здание «Отеля и СПА 1389»</li>
+            <li class="project__list-item">Комплекс «Апартаментов 1389»</li>
+            <li class="project__list-item">Станции канатных дорог «Альпика-Сервис» отм. 550</li>
+            <li class="project__list-item">Станции канатных дорог «Горный приют 2» отм. 2256</li>
+          </ul>
         </div>
+        <div class="project__image"><img src="./images/project-2.jpg" alt="project"></div>
+        <div class="project__lets-slide block__lets-slide">Проведите</div>
       </div>
-      <div class="project__image"><img src="./images/project-3.jpg" alt="project"></div>
-      <div class="project__lets-slide block__lets-slide">Проведите</div>
-    </div>
 
-    <div class="project">
-      <div class="project__container">
-        <h3 class="project__title">Курорт «Охта&nbsp;Парк»</h3>
-        <ul class="project__list">
-          <li class="project__list-item">Здание кулинарии</li>
-          <li class="project__list-item">Здание «Детского клуба»</li>
-          <li class="project__list-item">Коттеджи для размещения</li>
-        </ul>
-        <div class="project__data">
-          <p class="project__square-title">
-            <span>1 200+</span>
-            <span class="project__square-measure">м<sup>2</sup></span>
-          </p>
-          <p class="project__square-text">Общая площадь объектов</p>
-          <img src="./images/project-location-icon.svg" alt="location" class="project__location-icon">
-          <p class="project__location-text">Россия, Ленинградская область, Всеволожский р-н, д. Мистолово, ул. Людмилы Кедриной, 1А</p>
+      <div class="project project_rosa">
+        <div class="project__container">
+          <h3 class="project__title">Канатная дорога 3S&nbsp;Роза-Хутор</h3>
+          <p class="project__subtitle">Выполнение работ по монтажу металлоконструкций и&nbsp;кровельных систем, в рамках технологии исполнения фальцеовй кровли, цинк-титан и композитная черепица</p>
+          <ul class="project__list">
+            <li class="project__list-item">Станции канатных дорог на отм. 1500</li>
+            <li class="project__list-item">Станции канатных дорог ан отм. 1850</li>
+          </ul>
+          <div class="project__data">
+            <p class="project__square-title">
+              <span>250 000+</span>
+              <span class="project__square-measure">м<sup>2</sup></span>
+            </p>
+            <p class="project__square-text">Общая площадь покрытия</p>
+            <img src="./images/project-location-icon.svg" alt="location" class="project__location-icon">
+            <p class="project__location-text">Россия, Краснодарский край,  пос.&nbsp;Красная Поляна</p>
+          </div>
         </div>
+        <div class="project__image"><img src="./images/project-3.jpg" alt="project"></div>
+        <div class="project__lets-slide block__lets-slide">Проведите</div>
       </div>
-      <div class="project__image"><img src="./images/project-4.jpg" alt="project"></div>
-      <div class="project__lets-slide block__lets-slide">Проведите</div>
-    </div>
 
-    <div class="project project_kolobovichi">
-      <div class="project__container">
-        <h3 class="project__title">Парк-отель «Колобовичи»</h3>
-        <p class="project__subtitle">Используемые технологии фахверк — каркас из клееного бруса.</p>
-        <ul class="project__list">
-          <li class="project__list-item">4 комфортабельных коттеджа для размещения</li>
-        </ul>
-        <div class="project__data">
-          <p class="project__square-title">
-            <span>600+</span>
-            <span class="project__square-measure">м<sup>2</sup></span>
-          </p>
-          <p class="project__square-text">Общая площадь объектов</p>
-          <img src="./images/project-location-icon.svg" alt="location" class="project__location-icon">
-          <p class="project__location-text">Республика Беларусь, Брестская область, Барановичский район Подгорновский с/с д.Колбовичи, клуб д. Колбовичи</p>
+      <div class="project">
+        <div class="project__container">
+          <h3 class="project__title">Курорт «Охта&nbsp;Парк»</h3>
+          <ul class="project__list">
+            <li class="project__list-item">Здание кулинарии</li>
+            <li class="project__list-item">Здание «Детского клуба»</li>
+            <li class="project__list-item">Коттеджи для размещения</li>
+          </ul>
+          <div class="project__data">
+            <p class="project__square-title">
+              <span>1 200+</span>
+              <span class="project__square-measure">м<sup>2</sup></span>
+            </p>
+            <p class="project__square-text">Общая площадь объектов</p>
+            <img src="./images/project-location-icon.svg" alt="location" class="project__location-icon">
+            <p class="project__location-text">Россия, Ленинградская область, Всеволожский р-н, д. Мистолово, ул. Людмилы Кедриной, 1А</p>
+          </div>
         </div>
+        <div class="project__image"><img src="./images/project-4.jpg" alt="project"></div>
+        <div class="project__lets-slide block__lets-slide">Проведите</div>
       </div>
-      <div class="project__image"><img src="./images/project-5.jpg" alt="project"></div>
-      <div class="project__lets-slide block__lets-slide">Проведите</div>
-    </div>
 
+      <div class="project project_kolobovichi">
+        <div class="project__container">
+          <h3 class="project__title">Парк-отель «Колобовичи»</h3>
+          <p class="project__subtitle">Используемые технологии фахверк — каркас из клееного бруса.</p>
+          <ul class="project__list">
+            <li class="project__list-item">4 комфортабельных коттеджа для размещения</li>
+          </ul>
+          <div class="project__data">
+            <p class="project__square-title">
+              <span>600+</span>
+              <span class="project__square-measure">м<sup>2</sup></span>
+            </p>
+            <p class="project__square-text">Общая площадь объектов</p>
+            <img src="./images/project-location-icon.svg" alt="location" class="project__location-icon">
+            <p class="project__location-text">Республика Беларусь, Брестская область, Барановичский район Подгорновский с/с д.Колбовичи, клуб д. Колбовичи</p>
+          </div>
+        </div>
+        <div class="project__image"><img src="./images/project-5.jpg" alt="project"></div>
+        <div class="project__lets-slide block__lets-slide">Проведите</div>
+      </div>
+
+    </div>
   </section>
 
   <section class="end block">
