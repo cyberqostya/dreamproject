@@ -44,11 +44,13 @@ function removeActive() { console.log(111);
 }
 
 // Проскроллить до середины Портфолио
-const proj = document.querySelectorAll('.project');
-proj.forEach(i => {
-  const cont = i.querySelector('.project__container');
-  const firstim = i.querySelector('.project__image');
-  i.scrollLeft = cont.clientWidth / 2 + firstim.clientWidth - i.clientWidth / 2;
+window.addEventListener('load', () => {
+  const proj = document.querySelectorAll('.project');
+  proj.forEach(i => {
+    const cont = i.querySelector('.project__container');
+    const firstim = i.querySelector('.project__image');
+    i.scrollLeft = cont.clientWidth / 2 + firstim.clientWidth - i.clientWidth / 2;
+  })
 })
 
 
