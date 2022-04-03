@@ -1,1 +1,0 @@
-pages: https://cyberqostya.github.io/ramfjord/

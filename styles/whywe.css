@@ -29,6 +29,10 @@
   font-weight: 300;
 }
 
+.whywe__advantage-image {
+  max-height: 55px;
+}
+
 .whywe__slider-controllers {
   display: none;
 }
@@ -83,5 +87,14 @@
   }
   .whywe__slider-dots {
     display: flex;
+  }
+}
+@media (max-width: 768px) {
+  .whywe {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .whywe__advantage-title {
+    font-size: 25px;
   }
 }

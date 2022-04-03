@@ -6,7 +6,7 @@
   color: #fff;
   transition: height .5s;
 
-  --max-width: 725px;
+  --max-width: 1300px;
 }
 
 .end__title {
@@ -34,14 +34,16 @@
   border: none;
   padding: 22px;
   color: #fff;
-  outline-color: #fff;
-  outline-width: 1px;
+  outline: none;
   font-size: 18px;
   line-height: 1;
 }
 .end__form-input::placeholder {
   text-align: center;
 }
+
+select.end__form-input { appearance: none; }
+select.end__form-input._active { text-align: center; color: rgb(117, 117, 117); }
 
 .end__form-button {
   background: transparent;
@@ -77,12 +79,8 @@
 
 @media screen and (max-width: 700px) {
   .end {
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom: 80px;
-  }
-  .end__title {
-    font-size: 36px;
-    line-height: 50px;
   }
   .end__subtitle {
     padding-top: 20px;
@@ -91,20 +89,16 @@
 }
 
 @media screen and (max-width: 500px) {
-  .end {
-    text-align: left;
+  .end { 
+    text-align: left; 
+    padding-top: 50px;
+    padding-bottom: 80px;
   }
-  .end__form {
-    max-width: none;
-  }
-  .end__success {
-    padding-top: 200px;
-  }
+  .end__form {  max-width: none; }
+  .end__success { padding-top: 200px; }
   .end__success-title {
     font-size: 36px;
     line-height: 40px;
   }
-  .end__success-text {
-    margin-top: 8px;
-  }
+  .end__success-text { margin-top: 8px; }
 }

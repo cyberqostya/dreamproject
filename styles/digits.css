@@ -1,5 +1,5 @@
 .digits {
-  background: center/cover url(../images/digits-back.png);
+  background: center/cover url(../images/digits/background.jpg);
   color: #fff;
   padding-top: 140px;
   padding-bottom: 140px;
@@ -20,7 +20,7 @@
 
 .digits__digit {
   width: calc((100% - var(--gap)) / 2);
-  min-width: 510px;
+  min-width: 450px;
 }
 
 .digits__digit-title {

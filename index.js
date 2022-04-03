@@ -22,16 +22,6 @@ addSlide(
     },
   }
 );
-addSlide(
-  960, 
-  'stagesSlider', 
-  {
-    sliderWindow: document.querySelector('.stages__container-window'),
-    sliderRoad: document.querySelector('.stages__container'),
-    slides: document.querySelectorAll('.stages__stage'),
-    dotsContainer: document.querySelector('.stages__slider-dots'),
-  }
-);
 
 
 // Форма
@@ -45,6 +35,21 @@ const feedbackForm = new End({
   success: document.querySelector('.end__success'),
   successMessageName: document.querySelector('.end__success-client-name'),
 });
+
+// Стили select
+document.querySelector('select.end__form-input').addEventListener('click', removeActive);
+function removeActive() { console.log(111);
+  this.classList.remove('_active'); 
+  document.querySelector('select.end__form-input').removeEventListener('click', removeActive)
+}
+
+// Проскроллить до середины Портфолио
+const proj = document.querySelectorAll('.project');
+proj.forEach(i => {
+  const cont = i.querySelector('.project__container');
+  const firstim = i.querySelector('.project__image');
+  i.scrollLeft = cont.clientWidth / 2 + firstim.clientWidth - i.clientWidth / 2;
+})
 
 
 // Обновление для подтягивания стилей из JavaScript

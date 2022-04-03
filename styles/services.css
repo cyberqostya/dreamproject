@@ -1,5 +1,5 @@
 .services {
-  background: center/cover no-repeat url(../images/services-back.jpg);
+  background: center/cover no-repeat url(../images/services/background.jpg);
   padding-top: 90px;
   padding-bottom: 90px;
 
@@ -57,7 +57,8 @@
 
 .services__list-item {
   list-style-type: none;
-  line-height: 38px;
+  line-height: 1.5;
+  margin-bottom: 12px;
 }
 
 
@@ -93,4 +94,8 @@
   .services__subtitle {
     text-align: center;
   }
+}
+@media (max-width: 500px) {
+  .services__subtitle { font-size: var(--title-size); line-height: var(--title-lineheight); }
+  .services__list {text-align: left;}
 }
