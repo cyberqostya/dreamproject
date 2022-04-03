@@ -51,6 +51,7 @@ window.addEventListener('load', () => {
     const firstim = i.querySelector('.project__image');
     i.scrollLeft = cont.clientWidth / 2 + firstim.clientWidth - i.clientWidth / 2;
   })
+  console.log(123);
 })
 
 
