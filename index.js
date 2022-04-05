@@ -1,10 +1,10 @@
 const sliders = {};
+
 function addSlide(mobileWidth, name, data) {
   if (document.documentElement.clientWidth <= mobileWidth) {
     sliders[name] = new Slider(data);
   }
 }
-
 
 // Создание слайдеров
 addSlide(
@@ -24,36 +24,36 @@ addSlide(
 );
 
 
+
 // Форма
 const feedbackForm = new End({
   end: document.querySelector('.end'),
   form: document.forms.callback,
   nameInput: document.forms.callback.elements.name,
   telInput: document.forms.callback.elements.tel,
+  uslugiInput: document.forms.callback.elements.uslugi,
   submitBtn: document.forms.callback.elements.submit,
   subtitle: document.querySelector('.end__subtitle'),
   success: document.querySelector('.end__success'),
   successMessageName: document.querySelector('.end__success-client-name'),
+  upBtn: document.querySelector('.end__up'),
 });
 
-// Стили select
-document.querySelector('select.end__form-input').addEventListener('click', removeActive);
-function removeActive() { console.log(111);
-  this.classList.remove('_active'); 
-  document.querySelector('select.end__form-input').removeEventListener('click', removeActive)
-}
-
-// Проскроллить до середины Портфолио
-window.addEventListener('load', () => {
-  const proj = document.querySelectorAll('.project');
-  proj.forEach(i => {
-    const cont = i.querySelector('.project__container');
-    const firstim = i.querySelector('.project__image');
-    i.scrollLeft = cont.clientWidth / 2 + firstim.clientWidth - i.clientWidth / 2;
-  })
-  console.log(123);
-})
 
 
-// Обновление для подтягивания стилей из JavaScript
-// window.addEventListener('resize', () => { location.reload() });
+// Портфолио
+const portfolios = [];
+
+document.querySelectorAll('.project__wrapper').forEach(i => portfolios.push(new Portfolio({
+  container: i,
+  project: i.querySelector('.project'),
+  projectContainer: i.querySelector('.project__container'),
+  leftImage: i.querySelector('.project__image'),
+  leftDirection: i.querySelector('.project__direction_left'),
+  rightDirection: i.querySelector('.project__direction_right'),
+})));
+
+
+
+// Изменение favicon при переходе на темную тему браузера
+if(window.matchMedia('(prefers-color-scheme: dark)').matches) document.querySelector('link[rel*="shortcut"]').setAttribute('href', './images//favicon-theme-dark.svg');

@@ -24,6 +24,8 @@
 .details__3d:nth-of-type(2) .details__3d-posttext { order: 1; }
 .details__3d:nth-of-type(2) .details__works-line { order: 2; }
 
+.details__3d:nth-of-type(3) .details__3d-image { object-position: 25%; }
+
 .details__3d-image {
   width: calc(50% - 72px / 2);
   object-fit: cover;

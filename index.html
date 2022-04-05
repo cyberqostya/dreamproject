@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DreamProject | Индивидуальное проектирование домов для Вашей семьи">
+  <meta name="keywords" content="DreamProject, проектирование, эскизный проект, архитектурный проект, конструктивный проект">
   <link type="text/css" rel="stylesheet" href="./index.css">
   <link rel="shortcut icon" href="./images//favicon.svg" type="icon/svg">
   <title>DreamProject</title>
@@ -19,6 +21,7 @@
         <img class="header__mail-link-icon" src="./images/header/mail.svg" alt="email">
         <span class="header__mail-link-text">poznyak.artyom84@gmail.com</span>
       </a>
+      <a href="https://t.me/Artem_Poznyak" class="header__telegram-link"><img class="header__telegram-link-icon" src="./images/header/telegram.svg" alt="telegram"></a>
     </div>
   </header>
 
@@ -51,7 +54,7 @@
           <li class="about__list-item"><img src="./images/about/venzel.svg" alt="venzel"></li>
           <li class="about__list-item">Меня зовут Позняк Артем! Занимаюсь проектированием загородных частных домов с 2017 года.</li>
           <li class="about__list-item">Закончил с красным дипломом Санкт-Петербургский Политехнический университет Петра Великого по направлению «Строительство».</li>
-          <li class="about__list-item">МОЯ ГЛАВНАЯ ЗАДАЧА – ПРОФЕССИОНАЛЬНЫЙ ПОДХОД И РЕШЕНИЕ ЗАДАЧ ЛЮБОЙ СЛОЖНОСТИ</li>
+          <li class="about__list-item">Моя главная задача – профессиональный подход и решение задач любой сложности.</li>
           <li class="about__list-item">Я не стою на месте и постоянно совершенствую свои знания и навыки в области проектирования частных загородных домов.</li>
           <li class="about__list-item"><img src="./images/about/venzel.svg" alt="venzel"></li>
         </ul>
@@ -90,11 +93,11 @@
 
     <div class="whywe__slider-controllers">
       <div class="whywe__slider-counters">
-        <img src="./images/whywe-arrow.png" alt="arrow" class="whywe__slider-arrow whywe__slider-arrow_left">
+        <img src="./images/whywe/whywe-arrow.png" alt="arrow" class="whywe__slider-arrow whywe__slider-arrow_left">
         <p class="whywe__slider-counter">
           <!-- Здесь динамически вставляется цифровой счетчик слайдов -->
         </p>
-        <img src="./images/whywe-arrow.png" alt="arrow" class="whywe__slider-arrow whywe__slider-arrow_right _active">
+        <img src="./images/whywe/whywe-arrow.png" alt="arrow" class="whywe__slider-arrow whywe__slider-arrow_right _active">
       </div>
       <div class="whywe__slider-dots slider__dots-container">
         <!-- Здесь динамически вставляются счетчики слайдов -->
@@ -153,6 +156,7 @@
         <li class="services__list-item">Составление раскроя пиломатериалов – входит в стоимость конструктивного проекта</li>
         <li class="services__list-item">Создание 3D модели дома в формате BIMx - от&nbsp;150&nbsp;руб/м2</li>
         <li class="services__list-item">Реалистичная 3D визуализация модели дома - от&nbsp;200&nbsp;руб/м2</li>
+        <li class="services__list-item">Сопровождение строительства без выезда на участок - 10000&nbsp;руб/мес.</li>
       </ul>
     </div>
   </section>
@@ -318,13 +322,20 @@
           <p class="project__direction project__direction_right">3D-каркас</p>
         </div>
         <div class="project">
-          <img src="./images/project/adv31.jpg" class="project__image" alt="project">
+          <img src="./images/project/adv31.jpeg" class="project__image" alt="project">
           <div class="project__container">
             <h3 class="project__title">Беседка «Додо»</h3>
             <ul class="project__list">
               <li class="project__list-item">Большая теплая беседка</li>
               <li class="project__list-item">Панорамное остекление</li>
             </ul>
+            <div class="project__data">
+              <p class="project__square-title">
+                <span>46</span>
+                <span class="project__square-measure">м<sup>2</sup></span>
+              </p>
+              <p class="project__square-text">Площадь объекта</p>
+            </div>
           </div>
           <img src="./images/project/adv32.png" class="project__image" alt="project">
         </div>
@@ -343,6 +354,13 @@
               <li class="project__list-item">2 места для автомобилей</li>
               <li class="project__list-item">Вместительное хозяйственное помещение</li>
             </ul>
+            <div class="project__data">
+              <p class="project__square-title">
+                <span>63</span>
+                <span class="project__square-measure">м<sup>2</sup></span>
+              </p>
+              <p class="project__square-text">Площадь объекта</p>
+            </div>
           </div>
           <img src="./images/project/adv42.png" class="project__image" alt="project">
         </div>
@@ -359,9 +377,9 @@
       <input class="end__form-input" name="tel" type="tel" placeholder="Телефон" required pattern="^(\+?[0-9])?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$" />
       <select name="uslugi" class="end__form-input _active" required>
         <option value="" disabled selected>Выберите услугу</option>
-        <option value="1">Услуга 1</option>
-        <option value="2">Услуга 2</option>
-        <option value="3">Услуга 3</option>
+        <option value="Эскизный проект">Эскизный проект</option>
+        <option value="Архитектурный проект">Архитектурный проект</option>
+        <option value="Конструктивный проект">Конструктивный проект</option>
       </select>
       <button name="submit" class="end__form-button block__form-link">Оставить заявку</button>
     </form>
@@ -372,12 +390,14 @@
       </p>
       <p class="end__success-text">Я скоро с вами свяжусь!</p>
     </div>
+    <button class="end__up"><img src="./images/end/up.svg" alt="up"></button>
   </section>
 
   <footer class="footer block">
     <div class="footer__first">
       <img src="./images/header/logo.svg" alt="logo" class="footer__logo">
       <a href="mailto:info@ramfjord.ru" class="footer__link footer__link_email">poznyak.artyom84@gmail.com</a>
+      <a href="https://t.me/Artem_Poznyak" class="footer__link footer__link_telegram">Artem_Poznyak</a>
     </div>
     <hr class="footer__line">
     <div class="footer__second">
@@ -392,7 +412,7 @@
       <img src="./images/footer/adv9.jpg" alt="partner-logo" class="footer__partner-logo _elk">
       <img src="./images/footer/adv10.jpg" alt="partner-logo" class="footer__partner-logo _gudvil">
       <img src="./images/footer/adv11.jpg" alt="partner-logo" class="footer__partner-logo _rodas">
-      <img src="./images/footer/adv11.jpg" alt="partner-logo" class="footer__partner-logo _rodas">
+      <img src="./images/footer/adv12.jpg" alt="partner-logo" class="footer__partner-logo _rodas">
     </div>
     <hr class="footer__line">
     <div class="footer__last-data">
@@ -402,6 +422,7 @@
   </footer>
 
   <script src="./components/Slider.js"></script>
+  <script src="./components/Portfolio.js"></script>
   <script src="./components/End.js"></script>
   <script src="./index.js"></script>
 </body>

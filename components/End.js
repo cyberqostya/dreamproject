@@ -5,15 +5,28 @@ class End {
     this.form = data.form;
     this.nameInput = data.nameInput;
     this.telInput = data.telInput;
+    this.uslugiInput = data.uslugiInput;
     this.submitBtn = data.submitBtn;
+    this.upBtn = data.upBtn;
 
     this.end = data.end;
     this.subtitle = data.subtitle;
     this.success = data.success;
     this.successMessageName = data.successMessageName;
 
+    // Слушатель на отправку формы
     this.form.addEventListener('submit', this.submitForm);
     this.setEndHeight(this.end.clientHeight);
+
+    // Стили select
+    this.uslugiInput.addEventListener('click', this.styleSelect);
+
+    // Слушатель на кнопку ВВЕРХ
+    this.upBtn.addEventListener('click', () => { 
+      document.documentElement.style = 'scroll-behavior: smooth'; 
+      document.documentElement.scrollTop = 0;
+      document.documentElement.removeAttribute('style');
+    })
   }
 
   submitForm = (e) => {
@@ -26,11 +39,15 @@ class End {
     //   body: formData,
     // })
     // .then(response => {
-    //   if(response.ok) { this.form.reset() }
+    //   if(response.ok) { this.drowSuccess() }
     //   else { alert('Произошла ошибка на сервре. Перезагрузите страницу и попробуйте снова.') }
     // });
 
-    this.drowSuccess();
+  }
+
+  styleSelect = () => {
+    this.uslugiInput.classList.remove('_active'); 
+    this.uslugiInput.removeEventListener('click', this.styleSelect);
   }
 
   setEndHeight(height) {

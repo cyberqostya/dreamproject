@@ -54,8 +54,10 @@
   margin-right: 15px;
   flex-shrink: 0;
 }
-.footer__link_email::before { background-image: url(../images/email-icon.svg) }
+.footer__link_email::before { background-image: url(../images/footer/email-icon.svg) }
+.footer__link_telegram::before { background-image: url(../images/footer/telegram-icon.svg) }
 .footer__link:hover { transform: scale(1.1) }
+.footer__link_telegram { display: none; }
 
 .footer__line {
   width: 100%;
@@ -88,6 +90,7 @@
   .footer__partner-logo { 
     width: calc((100% - 20px * 3) / 4); 
   }
+  .footer__link_telegram { display: flex; }
 }
 @media (max-width: 480px) {
   .footer__partner-logo { 

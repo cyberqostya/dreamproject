@@ -54,7 +54,7 @@
   display: block;
   width: 14px;
   height: 14px;
-  background: center/contain no-repeat url(../images/advantages-marker.svg);
+  background: center/contain no-repeat url(../images/intro/advantages-marker.svg);
   flex-shrink: 0;
   position: relative;
   top: 1px;
